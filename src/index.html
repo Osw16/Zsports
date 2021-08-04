@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z sports</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:930px)" />
+</head>
+
+<body>
+    <header>
+
+        <img src="./assets/img/logo.png" alt="">
+        <div class="header--title-container">
+            <h1>La próxima revolución del deporte en Venezuela.</h1>
+            <p>
+                Zsports te ayuda a navegar entre los diferentes deportes y tendencias.
+            </p>
+            <a href="#plans" class="header--button">Conoce nuestros productos <span></span> </a>
+        </div>
+    </header>
+    <main>
+        <section class="main-exchange-container">
+            <div class="bg-img"></div>
+            <div class="main-exchange-container--title">
+                <h2>Visibilizamos todas las estadisticas.</h2>
+                <p>
+                    Datos actualizados de los goleadores del torneo del Fútbol Venezolano #futve
+                </p>
+            </div>
+            <section class="main-table-container">
+                <div class="main-table">
+                    <p class="table--title">Líderes en Goles</p>
+                    <div id="top-goal-chart"></div>
+                </div>
+                <div class="table--date">
+                    <p><b>Actualizado:</b>25 Julio 23:48</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="main-product-detail">
+            <span class="product-detail--nav-logo"></span>
+            <div class="product-detail--title">
+                <h2>Creamos un producto sin comparación.</h2>
+                <p>Confiable y diseñado para su uso diario.</p>
+            </div>
+            <section class="product-cards--container">
+                <article class="product-detail--card">
+                    <span class="icon-card clock"></span>
+                    <p class="product--card-title">Tiempo real</p>
+                    <p class="product--card-body">
+                        Nuestra API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.
+                    </p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="icon-card check"></span>
+                    <p class="product--card-title">Información confiable</p>
+                    <p class="product--card-body">
+                        Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.
+                    </p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="icon-card eye"></span>
+                    <p class="product--card-title">Información confiable</p>
+                    <p class="product--card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas et, nisi, aut repellat laudantium nulla dolor, asperiores sit perferendis fuga veritatis doloremque nihil sunt sint aspernatur. Quidem officia corporis velit.
+                    </p>
+                </article>
+            </section>
+        </section>
+        <section class="women-img-container">
+            <h2>Conócelo hoy.</h2>
+        </section>
+        <section id="plans" class="main-plans-container">
+            <div class="plans--title">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+                <section class="plans-container--slider">
+                    <article class="plans-container--card">
+                        <p class="basic">Basico</p>
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title"> Pago Mensual</h3>
+                            <p class="plan-card--price"> <span>$</span>19</p>
+                            <p class="plan-card--saving">* Plan básico aunque con todas ventajas.</p>
+                            <button class="plan-card--ca">Escoger este <span></span> </button>
+                        </div>
+                    </article>
+                    <article class="plans-container--card">
+                        <p class="recommended">Recomendado</p>
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title"> Pago Semestral</h3>
+                            <p class="plan-card--price"> <span>$</span>99</p>
+                            <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span> </button>
+                        </div>
+                    </article>
+                    <article class="plans-container--card">
+                        <p class="expert">Expert +</p>
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title"> Pago Anual</h3>
+                            <p class="plan-card--price"> <span>$</span>199</p>
+                            <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span> </button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <!-- <p>Siguenos en:</p> -->
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/zsportsven/">Instagram</a></li>
+                <li>
+                    <a href="https://twitter.com/RaulZambrano7">@RaulZambrano7</a></li>
+                <li>
+                    <a href="https://twitter.com/Osw16">@osw16</a></li>
+            </ul>
+        </section>
+        <section>
+            <img src="./assets/img/miniNavBar.png" alt="nav-logo Zsports ">
+        </section>
+    </footer>
+
+</body>
+
+
+</html>
+<script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js "; import define from "https://api.observablehq.com/@osw16/untitled.js?v=3"; new Runtime().module(define, name => { if (name === "chart") return new
+    Inspector(document.querySelector("#top-goal-chart")); });
+</script>
